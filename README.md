@@ -19,6 +19,25 @@ STEP_1 - оздание базового проекта</p>
 
 </p>
 STEP_2 - интеграция Spring Security. Базовая аутентификация.</p>
+
+1. добавление зависимости spring-boot-starter-security</p>
+
+![step2_0](https://user-images.githubusercontent.com/61631173/132099310-eae84745-afcd-40cb-a0ab-2d81480121d4.JPG)</p>
+
+3. перезапуск приложения</p>
+4. запуск -> перенаправление на страницу логина</p>
+
+![step2_1](https://user-images.githubusercontent.com/61631173/132099338-2076d4bc-025b-45af-99ac-c314263f634a.JPG)
+</p>
+5. логин по умолчанию "user"</p>
+7. пароль генерируется при запуске приложения</p>
+![step2_2](https://user-images.githubusercontent.com/61631173/132099367-eedb47f4-a2f1-4945-975d-1d15f919bb2c.JPG)
+
+![step2_3](https://user-images.githubusercontent.com/61631173/132099376-efac15bd-5ea1-46f8-842d-29e200cb78f0.JPG)
+
+![step2_4](https://user-images.githubusercontent.com/61631173/132099379-2aac2a90-e637-4e94-9673-91c6125a974c.JPG)
+
+</p>
 STEP_3 - на данном шаге приложения используется UserDetailsService (in memory).</p>
 STEP_4 - авторизация пользователя на основании ролей.</p>
 На данном шаге предоставим доступ user для чтения и admin для чтения и записи.</p>
