@@ -31,6 +31,7 @@ STEP_2 - интеграция Spring Security. Базовая аутентифи
 </p>
 5. логин по умолчанию "user"</p>
 7. пароль генерируется при запуске приложения</p>
+
 ![step2_2](https://user-images.githubusercontent.com/61631173/132099367-eedb47f4-a2f1-4945-975d-1d15f919bb2c.JPG)
 
 ![step2_3](https://user-images.githubusercontent.com/61631173/132099376-efac15bd-5ea1-46f8-842d-29e200cb78f0.JPG)
