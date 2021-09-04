@@ -11,8 +11,10 @@ STEP_1 - оздание базового проекта</p>
    - создание коллекции в качестве данных, содержащей разработчиков   </p>
    - public List<Developer> getall() - возвращает список разработчиков</p>
    - public Developer getById(Long id)</p>
-  проверка вывода в браузере занесённых данных</p>
-  ![step1_1](https://user-images.githubusercontent.com/61631173/132098142-c079f0fe-9329-45a9-930d-7476b7a7fe1f.JPG)</p>
+  проверка вывода в браузере занесённых данных</p></p>
+  
+  ![step1_1](https://user-images.githubusercontent.com/61631173/132098142-c079f0fe-9329-45a9-930d-7476b7a7fe1f.JPG)</p></p>
+  
 ![step1_2](https://user-images.githubusercontent.com/61631173/132098145-3538d2b7-c588-4ed6-a749-47870f83bfca.JPG)</p>
 
 </p>
