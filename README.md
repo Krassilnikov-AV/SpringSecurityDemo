@@ -54,13 +54,13 @@ STEP_4 - авторизация пользователя на основании
 2. Для представления конкретных ролей, добавляется сама сущность в качестве enum Role с добавлением ролей.
  </p>
 3. для разграничения доступа ролей реализуем кастумную реализацию http в методе config класса SecurityConfig будет собственная реализация: </p>
-1) http запрос нужно авторизовать с указанием доступа кого угодно [ .authorizeRequests().antMatchers("/").permitAll() ] </p>
+1) http запрос нужно авторизовать с указанием доступа кого угодно <em>[ .authorizeRequests().antMatchers("/").permitAll() ] </em></p>
 2) в ресурсах создание страницы index.html </p>
-3) следующий паттерн antMatchers, который связан уже с api, т.е. то что связано с api, пойдёт с определёнными ролями <en>[ .antMatchers(HttpMethod.GET, "/api/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) ], по аналогии так же пишется на метод POST и DELETE только с hasRole
-[ .antMatchers(HttpMethod.POST, "/api/**").hasRole(Role.ADMIN.name())
-  .antMatchers(HttpMethod.DELETE, "/api/**").hasRole(Role.ADMIN.name()) ] </p>
-4) Так же нужно сказать что каждый запрос должен быть аутентифицирован [ .anyRequest().authenticated() ] </p>
-5) и хочу использовать httpBasic [ .and().httpBasic() ] </p>
-6) Так же не забыть добавить механизм защиты от csrf угрозы [ .csrf().disable() ] предусмотрен Spring Security по умолчанию..</p>
+3) следующий паттерн antMatchers, который связан уже с api, т.е. то что связано с api, пойдёт с определёнными ролями <em>[ .antMatchers(HttpMethod.GET, "/api/**").hasAnyRole(Role.ADMIN.name(), Role.USER.name()) ]</em>, по аналогии так же пишется на метод POST и DELETE только с hasRole
+<em>[ .antMatchers(HttpMethod.POST, "/api/**").hasRole(Role.ADMIN.name())
+  .antMatchers(HttpMethod.DELETE, "/api/**").hasRole(Role.ADMIN.name()) ]</em> </p>
+4) Так же нужно сказать что каждый запрос должен быть аутентифицирован <em>[ .anyRequest().authenticated() ] </em></p>
+5) и хочу использовать httpBasic <em>[ .and().httpBasic() ]</em> </p>
+6) Так же не забыть добавить механизм защиты от csrf угрозы <em>[ .csrf().disable() ]</em> предусмотрен Spring Security по умолчанию..</p>
 STEP_5 - авторизация пользователя на основании прав (autorities)</p>
 STEP_6 - использование аннотации @PreAuthorization</p></p></p></p>
