@@ -40,6 +40,14 @@ STEP_2 - интеграция Spring Security. Базовая аутентифи
 
 </p>
 STEP_3 - на данном шаге приложения используется UserDetailsService (in memory).</p>
+Для жизненных ситуаций необходимо разные имена пользователей и паролей</p>
+Для этоко необходимо сконфтгурировать Spring Security:</p>
+1. создание пакета "config"</p>
+2. создание класса SecurityConfig наследника WebSecurityConfigurerAdapter </p>
+3. переопределение методов </p>
+   - protected void configure(HttpSecurity http) throws Exception </p>
+ - и создание Бина из перерпределенного метода protected UserDetailsService userDetailsService() для задания имени пользователя и пароля/</p>
+4. После перезапуска можно вводить имя и пароль admin</p>
 STEP_4 - авторизация пользователя на основании ролей.</p>
 На данном шаге предоставим доступ user для чтения и admin для чтения и записи.</p>
 STEP_5 - авторизация пользователя на основании прав (autorities)</p>
