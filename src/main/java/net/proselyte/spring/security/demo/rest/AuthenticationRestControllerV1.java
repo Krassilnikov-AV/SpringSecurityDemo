@@ -4,9 +4,9 @@
 
 package net.proselyte.spring.security.demo.rest;
 
+import net.proselyte.spring.security.demo.model.User;
 import net.proselyte.spring.security.demo.repository.UserRepository;
-import net.proselyte.springsecuritydemo.model.User;
-import net.proselyte.springsecuritydemo.security.JwtTokenProvider;
+import net.proselyte.spring.security.demo.security.JwtTokenProvider;
 import org.springframework.http.*;
 import org.springframework.security.authentication.*;
 import org.springframework.security.core.AuthenticationException;
